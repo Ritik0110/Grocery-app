@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_iconly/flutter_iconly.dart';
 import 'package:grocery_app/screens/cart.dart';
 import 'package:grocery_app/screens/category.dart';
-import 'package:grocery_app/screens/home_screen.dart';
+import 'package:grocery_app/screens/home_screen1.dart';
 import 'package:grocery_app/screens/user.dart';
 
 class BottomBarScreen extends StatefulWidget {
@@ -13,14 +13,14 @@ class BottomBarScreen extends StatefulWidget {
 }
 
 class _BottomBarScreenState extends State<BottomBarScreen> {
-  int selectedIndex = 0;
+  int selectedIndex = 1;
   final List<Map<String,dynamic>> _pages = [
     {
-      'page':const HomeScreen(),
+      'page':const HomePageMain(),
       'title':"Home Screen"
     },
     {
-      'page':const CategoryScreen(),
+      'page': CategoryScreen(),
       'title':"Category Screen"
     },
     {
